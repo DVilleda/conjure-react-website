@@ -41,7 +41,7 @@ Footer.defaultProps = {
   image_alt: 'logo',
   rootClassName: '',
   image_src: 'https://conjure.etsmtl.ca/img/conjure-logo.svg',
-  Text: '© 2021 teleportHQ, All Rights Reserved.',
+  Text: '© 2023 Conjure ETS',
 }
 
 Footer.propTypes = {

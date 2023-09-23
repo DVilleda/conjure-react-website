@@ -29,7 +29,7 @@ const Gala = (props) => {
         <h1 className="gala-text">Gala Conjure</h1>
         <div className="gala-container3">
           <img
-            alt="image"
+            alt="Gala Conjure"
             src="https://conjure.etsmtl.ca/img/gala.jpg"
             className="gala-image"
           />

@@ -29,7 +29,7 @@ const GameJam = (props) => {
         <h1 className="game-jam-text">Montréal Gamjam</h1>
         <div className="game-jam-container3">
           <img
-            alt="image"
+            alt="Conjure GameJam"
             src="https://conjure.etsmtl.ca/img/mtlgj.jpg"
             className="game-jam-image"
           />

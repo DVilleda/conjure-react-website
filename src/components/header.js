@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import NavigationLinks from './navigation-links'
-import './header.css'
+import NavigationLinks from "./navigation-links";
+import "./header.css";
 
 const Header = (props) => {
   return (
@@ -102,17 +102,15 @@ const Header = (props) => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
 Header.defaultProps = {
-  image_src: 'https://conjure.etsmtl.ca/img/conjure-logo.svg',
-  rootClassName: '',
-  image_alt1: 'image',
-  image_alt: 'logo conjure, ETS Montreal',
-  image_src1:
-    'https://presentation-website-assets.teleporthq.io/logos/logo.png',
-}
+  image_src: "https://conjure.etsmtl.ca/img/conjure-logo.svg",
+  rootClassName: "",
+  image_alt1: "Club Etudiant Conjure",
+  image_alt: "logo conjure, ETS Montreal",
+};
 
 Header.propTypes = {
   image_src: PropTypes.string,
@@ -120,6 +118,6 @@ Header.propTypes = {
   image_alt1: PropTypes.string,
   image_alt: PropTypes.string,
   image_src1: PropTypes.string,
-}
+};
 
-export default Header
+export default Header;
