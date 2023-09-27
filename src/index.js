@@ -16,7 +16,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-            <Route element={<NotFound/>} path="**" />
+            <Route element={<NotFound/>} path="*" />
             <Route element={<About/>} exact path="/about" />
             <Route element={<GameJam/>} exact path="/game-jam" />
             <Route element={<Gala/>} exact path="/gala" />

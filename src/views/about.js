@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import Header from '../components/header'
-import Footer from '../components/footer'
-import './about.css'
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Navigator from "../components/navigator";
+import "./about.css";
+import "./home.css";
 
 const About = (props) => {
   return (
@@ -14,6 +16,11 @@ const About = (props) => {
         <meta property="og:title" content="About - Conjure" />
       </Helmet>
       <Header rootClassName="header-root-class-name"></Header>
+      <div className="home-container1">
+        <div className="home-features">
+          <Navigator></Navigator>
+        </div>
+      </div>
       <div className="about-steps">
         <h1 className="about-heading">Qui sommes-nous?</h1>
         <div className="about-container1">
@@ -73,7 +80,7 @@ const About = (props) => {
       </div>
       <Footer rootClassName="footer-root-class-name"></Footer>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

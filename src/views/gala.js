@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import Header from '../components/header'
-import ImageCard from '../components/image-card'
-import GalleryCard from '../components/gallery-card'
-import Footer from '../components/footer'
-import './gala.css'
+import Header from "../components/header";
+import GalleryCard from "../components/gallery-card";
+import Footer from "../components/footer";
+import Navigator from "../components/navigator";
+import "./gala.css";
 
 const Gala = (props) => {
   return (
@@ -17,12 +17,8 @@ const Gala = (props) => {
       </Helmet>
       <Header rootClassName="header-root-class-name1"></Header>
       <div className="gala-container1">
-        <div className="gala-features">
-          <div className="gala-container2">
-            <ImageCard rootClassName="rootClassName6"></ImageCard>
-            <ImageCard rootClassName="rootClassName7"></ImageCard>
-            <ImageCard rootClassName="rootClassName8"></ImageCard>
-          </div>
+        <div className="home-features">
+          <Navigator></Navigator>
         </div>
       </div>
       <div className="gala-hero">
@@ -64,7 +60,7 @@ const Gala = (props) => {
       </div>
       <Footer rootClassName="footer-root-class-name2"></Footer>
     </div>
-  )
-}
+  );
+};
 
-export default Gala
+export default Gala;

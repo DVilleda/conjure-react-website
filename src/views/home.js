@@ -3,17 +3,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 import Header from "../components/header";
-import ImageCard from "../components/image-card";
 import Footer from "../components/footer";
 import "./home.css";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-// import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import Navigator from "../components/navigator";
 
 const Home = (props) => {
   return (
@@ -25,43 +17,48 @@ const Home = (props) => {
       <Header rootClassName="header-root-class-name2"></Header>
       <div className="home-container1">
         <div className="home-features">
-        <Swiper
-              slidesPerView={1}
-              spaceBetween={10}
-              pagination={{
-                clickable: true,
-              }}
-              breakpoints={{
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 4,
-                  spaceBetween: 40,
-                },
-                1024: {
-                  slidesPerView: 5,
-                  spaceBetween: 50,
-                },
-              }}
-              modules={[Pagination]}
-              className="mySwiper"
-            >
-              <SwiperSlide>
-                <ImageCard rootClassName="rootClassName"></ImageCard>
-              </SwiperSlide>
-              <SwiperSlide>
-                <ImageCard rootClassName="rootClassName"></ImageCard>
-              </SwiperSlide>
-              <SwiperSlide>
-                <ImageCard rootClassName="rootClassName"></ImageCard>
-              </SwiperSlide>
-            </Swiper>
-          <div className="home-container2">
-
-          </div>
+          <Navigator></Navigator>
         </div>
+      </div>
+      <div className="home-container1" style={{justifyContent:"center"}}>
+        <section className="grid-container">
+          <div className="item1">
+            <img
+              src="https://conjure.etsmtl.ca/img/sponsors/ETS-color.png"
+              alt=""
+            />
+          </div>
+          <div className="item2">
+            <img
+              src="https://conjure.etsmtl.ca/img/sponsors/LanETS-black.png"
+              alt=""
+            />
+          </div>
+          <div className="item3">
+            <img
+              src="https://conjure.etsmtl.ca/img/sponsors/EA-Motive-black.png"
+              alt=""
+            />
+          </div>
+          <div className="item4">
+            <img
+              src="https://conjure.etsmtl.ca/img/sponsors/Ubisoft-black.png"
+              alt=""
+            />
+          </div>
+          <div className="item5">
+            <img
+              src="https://conjure.etsmtl.ca/img/sponsors/Desjardins-color.png"
+              alt=""
+            />
+          </div>
+          <div className="item6">
+            <img
+              src="https://conjure.etsmtl.ca/img/sponsors/autodesk-logo-primary-rgb-black-large.png"
+              alt=""
+            />
+          </div>
+        </section>
       </div>
       <Footer></Footer>
     </div>

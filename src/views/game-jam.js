@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import Header from '../components/header'
-import ImageCard from '../components/image-card'
-import GalleryCard from '../components/gallery-card'
-import Footer from '../components/footer'
-import './game-jam.css'
+import Header from "../components/header";
+import GalleryCard from "../components/gallery-card";
+import Footer from "../components/footer";
+import "./game-jam.css";
+import Navigator from "../components/navigator";
 
 const GameJam = (props) => {
   return (
@@ -17,12 +17,8 @@ const GameJam = (props) => {
       </Helmet>
       <Header></Header>
       <div className="game-jam-container1">
-        <div className="game-jam-features">
-          <div className="game-jam-container2">
-            <ImageCard rootClassName="rootClassName3"></ImageCard>
-            <ImageCard rootClassName="rootClassName4"></ImageCard>
-            <ImageCard rootClassName="rootClassName5"></ImageCard>
-          </div>
+        <div className="home-features">
+          <Navigator></Navigator>
         </div>
       </div>
       <div className="game-jam-hero">
@@ -37,12 +33,12 @@ const GameJam = (props) => {
         <h3 className="game-jam-text01">À propos de l&apos;événement</h3>
         <span className="game-jam-text02">
           <span>
-            {' '}
+            {" "}
             L’organisation du Montreal Game Jam est constituée de l’union de
             multiples universités et professionnels de Montréal dont le mandat
             <span
               dangerouslySetInnerHTML={{
-                __html: ' ',
+                __html: " ",
               }}
             />
           </span>
@@ -58,7 +54,7 @@ const GameJam = (props) => {
             voulons
             <span
               dangerouslySetInnerHTML={{
-                __html: ' ',
+                __html: " ",
               }}
             />
           </span>
@@ -68,7 +64,7 @@ const GameJam = (props) => {
             la possibilité de créer de nouveaux liens à travers cet événement.
             <span
               dangerouslySetInnerHTML={{
-                __html: ' ',
+                __html: " ",
               }}
             />
           </span>
@@ -78,7 +74,7 @@ const GameJam = (props) => {
             pourrons renforcer l’expertise générale. Considérant la forte
             <span
               dangerouslySetInnerHTML={{
-                __html: ' ',
+                __html: " ",
               }}
             />
           </span>
@@ -89,7 +85,7 @@ const GameJam = (props) => {
             de
             <span
               dangerouslySetInnerHTML={{
-                __html: ' ',
+                __html: " ",
               }}
             />
           </span>
@@ -108,7 +104,7 @@ const GameJam = (props) => {
             barrière et ainsi collaborer. Nous
             <span
               dangerouslySetInnerHTML={{
-                __html: ' ',
+                __html: " ",
               }}
             />
           </span>
@@ -125,7 +121,7 @@ const GameJam = (props) => {
             Plus d&apos;information sur le site du Montreal Game Jam
             <span
               dangerouslySetInnerHTML={{
-                __html: ' ',
+                __html: " ",
               }}
             />
           </span>
@@ -161,7 +157,7 @@ const GameJam = (props) => {
       </div>
       <Footer rootClassName="footer-root-class-name1"></Footer>
     </div>
-  )
-}
+  );
+};
 
-export default GameJam
+export default GameJam;

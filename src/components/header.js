@@ -1,7 +1,7 @@
 import React from "react";
 
 import PropTypes from "prop-types";
-
+import { Outlet, Link } from "react-router-dom";
 import NavigationLinks from "./navigation-links";
 import "./header.css";
 
@@ -11,13 +11,15 @@ const Header = (props) => {
       data-role="Header"
       className={`header-header header-site ${props.rootClassName} `}
     >
-      <img
-        id="logo-conjure"
-        alt={props.image_alt}
-        src={props.image_src}
-        loading="lazy"
-        className="header-image"
-      />
+      <Link to={`/`}>
+        <img
+          id="logo-conjure"
+          alt={props.image_alt}
+          src={props.image_src}
+          loading="lazy"
+          className="header-image"
+        />
+      </Link>
       <div className="header-nav">
         <NavigationLinks
           text="Évenement"
