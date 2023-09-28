@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Header from "../components/common/header";
-import GalleryCard from "../components/gallery-card";
 import Footer from "../components/common/footer";
 import Navigator from "../components/common/navigator";
 import "../assets/css/gala.css";
+import GalaProject from "../components/gala/gala-projects";
 
 const Gala = (props) => {
+  const [selectedYear, setselectedYear] = useState(2023);
+  const years = [2023, 2022, 2021, 2020];
+  const changeSelectedYear = (year) => {
+    setselectedYear(year);
+  };
   return (
     <div className="gala-container">
       <HelmetProvider>
@@ -17,7 +22,7 @@ const Gala = (props) => {
           <meta property="og:title" content="Gala - Conjure" />
         </Helmet>
       </HelmetProvider>
-      <Header rootClassName="header-root-class-name1"></Header>
+      <Header></Header>
       <div className="gala-container1">
         <div className="home-features">
           <Navigator></Navigator>
@@ -52,13 +57,22 @@ const Gala = (props) => {
           </span>
         </span>
       </div>
-      <div className="gala-gallery">
-        <GalleryCard rootClassName="gallery-card-root-class-name12"></GalleryCard>
-        <GalleryCard rootClassName="gallery-card-root-class-name13"></GalleryCard>
-        <GalleryCard rootClassName="gallery-card-root-class-name15"></GalleryCard>
-        <GalleryCard rootClassName="gallery-card-root-class-name14"></GalleryCard>
-        <GalleryCard rootClassName="gallery-card-root-class-name16"></GalleryCard>
-        <GalleryCard rootClassName="gallery-card-root-class-name17"></GalleryCard>
+      <div className="game-jam-container1">
+        <h2 className="game-jam-text">Éditions</h2>
+        <div className="game-jam-gallery">
+          {years.map((year) => (
+            <button
+              key={year}
+              className="button-47"
+              onClick={() => changeSelectedYear(year)}
+            >
+              {year}
+            </button>
+          ))}
+        </div>
+      </div>
+      <div>
+        <GalaProject year={selectedYear}></GalaProject>
       </div>
       <Footer rootClassName="footer-root-class-name2"></Footer>
     </div>

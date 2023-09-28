@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-import "./image-card.css";
+import '../assets/css/image-card.css'
 import logo from "../assets/images/Conjure_Logo.png"
 
 export default function ImageCard(props) {

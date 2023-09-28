@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProjectList from "./project-gallery";
 
-export default function GameJamProject(props) {
+export default function GalaProject(props) {
   const [eventData, setEventData] = useState([]);
 
   async function openJsonData() {
@@ -23,18 +23,8 @@ export default function GameJamProject(props) {
   return (
     <>
       <h2 className="game-jam-text" style={{ textAlign: "center" }}>
-        Thème
+        Projets
       </h2>
-      <h3
-        className="game-jam-text"
-        style={{
-          fontSize: "2rem",
-          textDecoration: "none",
-          textAlign: "center",
-        }}
-      >
-        {eventData !== undefined ? eventData.theme : null}
-      </h3>
       <div className="game-jam-gallery">
         <ProjectList
           eventData={

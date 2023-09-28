@@ -11,14 +11,12 @@
   object-fit: cover;
 }
 .gallery-card-text {
-  align-self: flex-start;
   margin-top: var(--dl-space-space-halfunit);
   font-weight: 600;
   margin-bottom: var(--dl-space-space-halfunit);
 }
 .gallery-card-text1 {
   color: var(--dl-color-gray-500);
-  align-self: flex-start;
 }
 
 

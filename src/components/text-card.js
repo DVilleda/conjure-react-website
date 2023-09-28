@@ -2,7 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './text-card.css'
+import '../assets/css/text-card.css'
 
 const TextCard = (props) => {
   return (
