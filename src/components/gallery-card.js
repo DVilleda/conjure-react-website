@@ -2,7 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './gallery-card.css'
+import '../assets/css/gallery-card.css'
 
 const GalleryCard = (props) => {
   return (

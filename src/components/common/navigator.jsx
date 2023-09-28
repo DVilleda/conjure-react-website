@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
-import { FreeMode, Pagination } from "swiper/modules";
-import ImageCard from "../components/image-card";
+import { Pagination } from "swiper/modules";
+import ImageCard from "../image-card";
 export default function Navigator(props) {
   return (
     <>
@@ -53,13 +53,13 @@ export default function Navigator(props) {
             view={"gala"}
           ></ImageCard>
         </SwiperSlide>
-        <SwiperSlide>
+{/*         <SwiperSlide>
           <ImageCard
             rootClassName="rootClassName"
             title={"About"}
             view={"about"}
           ></ImageCard>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );

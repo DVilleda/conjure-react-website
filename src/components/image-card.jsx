@@ -1,8 +1,9 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-import "./image-card.css";
+import '../assets/css/image-card.css'
+import logo from "../assets/images/Conjure_Logo.png"
 
 export default function ImageCard(props) {
   return (
@@ -12,7 +13,7 @@ export default function ImageCard(props) {
       <Link to={`/${props.view}`}>
         <img
           alt={props.image_alt}
-          src={props.image_src}
+          src={logo}
           className="image-card-image"
         />
       </Link>

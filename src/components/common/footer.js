@@ -1,8 +1,6 @@
-import React from 'react'
-
 import PropTypes from 'prop-types'
 
-import './footer.css'
+import '../../assets/css/footer.css'
 
 const Footer = (props) => {
   return (

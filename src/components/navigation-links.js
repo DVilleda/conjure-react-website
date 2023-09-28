@@ -2,7 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './navigation-links.css'
+import '../assets/css/navigation-links.css'
 
 const NavigationLinks = (props) => {
   return (
