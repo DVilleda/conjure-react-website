@@ -82,11 +82,8 @@ const Header = (props) => {
               </svg>
             </div>
           </div>
-          <NavigationLinks
-            rootClassName="rootClassName18"
-            className=""
-          ></NavigationLinks>
         </div>
+        {/*Social Media Icons Header*/}
         <div className="">
           <svg viewBox="0 0 950.8571428571428 1024" className="header-icon10">
             <path

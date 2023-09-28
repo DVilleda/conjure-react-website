@@ -160,19 +160,54 @@
 }
 
 /* CSS GRID SPONSORS*/
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
+.grid-container-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
   padding: 10px;
 }
 
-.grid-container > div {
-  text-align: center;
+.grid-container-sponsors > div {
   padding: 20px 0;
   font-size: 30px;
+  display: flex;
 }
-.grid-container > div > img {
+.grid-container-sponsors > div > img {
   max-width: 250px;
   height: auto;
+  object-fit: contain;
+}
+
+/* CSS */
+.button-47 {
+  align-items: center;
+  background: "#ffffff";
+  border: "0 solid #e2e8f0";
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  color: #1a202c;
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  height: 56px;
+  justify-content: center;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  padding: 24px;
+  text-decoration: none;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+.button-47:hover {
+  background: #eeeded;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
 }

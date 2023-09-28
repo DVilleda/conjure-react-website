@@ -53,13 +53,13 @@ export default function Navigator(props) {
             view={"gala"}
           ></ImageCard>
         </SwiperSlide>
-        <SwiperSlide>
+{/*         <SwiperSlide>
           <ImageCard
             rootClassName="rootClassName"
             title={"About"}
             view={"about"}
           ></ImageCard>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );

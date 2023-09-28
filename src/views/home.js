@@ -23,7 +23,7 @@ const Home = (props) => {
         </div>
       </div>
       <div className="home-container1" style={{justifyContent:"center"}}>
-        <section className="grid-container">
+        <section className="grid-container-sponsors">
           <div className="item1">
             <img
               src="https://conjure.etsmtl.ca/img/sponsors/ETS-color.png"
