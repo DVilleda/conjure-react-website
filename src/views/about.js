@@ -1,20 +1,22 @@
 import React from "react";
 
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import Header from "../components/header";
-import Footer from "../components/footer";
-import Navigator from "../components/navigator";
-import "./about.css";
-import "./home.css";
+import Header from "../components/common/header";
+import Footer from "../components/common/footer";
+import Navigator from "../components/common/navigator";
+import "../assets/css/about.css";
+import "../assets/css/home.css";
 
 const About = (props) => {
   return (
     <div className="about-container">
-      <Helmet>
-        <title>About - Conjure</title>
-        <meta property="og:title" content="About - Conjure" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>About - Conjure</title>
+          <meta property="og:title" content="About - Conjure" />
+        </Helmet>
+      </HelmetProvider>
       <Header rootClassName="header-root-class-name"></Header>
       <div className="home-container1">
         <div className="home-features">

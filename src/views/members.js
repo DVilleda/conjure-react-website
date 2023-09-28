@@ -1,19 +1,21 @@
-import React from 'react'
+import React from "react";
 
-import { Helmet } from 'react-helmet'
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import Header from '../components/header'
-import GalleryCard from '../components/gallery-card'
-import Footer from '../components/footer'
-import './members.css'
+import Header from "../components/common/header";
+import GalleryCard from "../components/gallery-card";
+import Footer from "../components/common/footer";
+import "../assets/css/members.css";
 
 const Members = (props) => {
   return (
     <div className="members-container">
-      <Helmet>
-        <title>Members - Conjure</title>
-        <meta property="og:title" content="Members - Conjure" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Members - Conjure</title>
+          <meta property="og:title" content="Members - Conjure" />
+        </Helmet>
+      </HelmetProvider>
       <Header rootClassName="header-root-class-name3"></Header>
       <div className="members-gallery">
         <GalleryCard rootClassName="gallery-card-root-class-name6"></GalleryCard>
@@ -25,7 +27,7 @@ const Members = (props) => {
       </div>
       <Footer rootClassName="footer-root-class-name3"></Footer>
     </div>
-  )
-}
+  );
+};
 
-export default Members
+export default Members;

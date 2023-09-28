@@ -1,20 +1,22 @@
 import React from "react";
 
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import Header from "../components/header";
+import Header from "../components/common/header";
 import GalleryCard from "../components/gallery-card";
-import Footer from "../components/footer";
-import "./game-jam.css";
-import Navigator from "../components/navigator";
+import Footer from "../components/common/footer";
+import "../assets/css/game-jam.css";
+import Navigator from "../components/common/navigator";
 
 const GameJam = (props) => {
   return (
     <div className="game-jam-container">
-      <Helmet>
-        <title>GameJam - Conjure</title>
-        <meta property="og:title" content="GameJam - Conjure" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>GameJam - Conjure</title>
+          <meta property="og:title" content="GameJam - Conjure" />
+        </Helmet>
+      </HelmetProvider>
       <Header></Header>
       <div className="game-jam-container1">
         <div className="home-features">
@@ -31,106 +33,41 @@ const GameJam = (props) => {
           />
         </div>
         <h3 className="game-jam-text01">À propos de l&apos;événement</h3>
-        <span className="game-jam-text02">
-          <span>
-            {" "}
+        <div className="game-jam-text02">
+          <p>
             L’organisation du Montreal Game Jam est constituée de l’union de
             multiples universités et professionnels de Montréal dont le mandat
-            <span
-              dangerouslySetInnerHTML={{
-                __html: " ",
-              }}
-            />
-          </span>
+            commun est de promouvoir l’industrie du jeu vidéo.
+          </p>
           <br></br>
-          <span>commun est de promouvoir l’industrie du jeu vidéo.</span>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <span>
+          <p>
             Nous rassemblons étudiants et professionnels pour stimuler la
             création et l’expérimentation de nouvelles idées et concepts. Nous
-            voulons
-            <span
-              dangerouslySetInnerHTML={{
-                __html: " ",
-              }}
-            />
-          </span>
+            voulons renforcer la collaboration avec la communauté du jeu et
+            ainsi offrir la possibilité de créer de nouveaux liens à travers cet
+            événement.
+          </p>
           <br></br>
-          <span>
-            renforcer la collaboration avec la communauté du jeu et ainsi offrir
-            la possibilité de créer de nouveaux liens à travers cet événement.
-            <span
-              dangerouslySetInnerHTML={{
-                __html: " ",
-              }}
-            />
-          </span>
-          <br></br>
-          <span>
+          <p>
             C’est en supportant le développement de cette communauté que nous
             pourrons renforcer l’expertise générale. Considérant la forte
-            <span
-              dangerouslySetInnerHTML={{
-                __html: " ",
-              }}
-            />
-          </span>
-          <br></br>
-          <span>
             présence médiatique, nos partenaires pourront ainsi démontrer leur
             intérêt à promouvoir la culture du jeu. C’est le temps de découvrir
-            de
-            <span
-              dangerouslySetInnerHTML={{
-                __html: " ",
-              }}
-            />
-          </span>
-          <br></br>
-          <span>
-            nouveaux talents, de cultiver de nouvelles idées et de former de
+            de nouveaux talents, de cultiver de nouvelles idées et de former de
             nouveaux liens.
-          </span>
+          </p>
           <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <span>
+          <p>
             Que les participants soient à l&apos;université ou de
             l&apos;industrie, l’événement offre la possibilité de briser cette
-            barrière et ainsi collaborer. Nous
-            <span
-              dangerouslySetInnerHTML={{
-                __html: " ",
-              }}
-            />
-          </span>
+            barrière et ainsi collaborer. Nous voulons surtout que vous ayez du
+            plaisir à accomplir ce défi et réaliser ce qui vous passionne!
+          </p>
           <br></br>
-          <span>
-            voulons surtout que vous ayez du plaisir à accomplir ce défi et
-            réaliser ce qui vous passionne!
-          </span>
+          <p> Plus d&apos;information sur le site du Montreal Game Jam</p>
           <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <span>
-            Plus d&apos;information sur le site du Montreal Game Jam
-            <span
-              dangerouslySetInnerHTML={{
-                __html: " ",
-              }}
-            />
-          </span>
-          <br></br>
-          <br></br>
-          <br></br>
-          <span>Pour plus d’info: https://mtlgj.org/lang/fr/index.html</span>
-          <br></br>
-        </span>
+          <p>Pour plus d’info: https://mtlgj.org/lang/fr/index.html</p>
+        </div>
       </div>
       <div className="game-jam-gallery">
         <GalleryCard rootClassName="rootClassName"></GalleryCard>

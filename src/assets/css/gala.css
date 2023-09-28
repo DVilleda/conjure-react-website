@@ -1,5 +1,5 @@
 .gala-container {
-  width: 100vw;
+  width: 100%;
   display: flex;
   overflow: auto;
   min-height: 100vh;
@@ -32,7 +32,6 @@
   width: 100%;
   display: flex;
   padding: var(--dl-space-space-threeunits);
-  max-height: 800px;
   min-height: 80vh;
   align-items: center;
   flex-direction: column;
@@ -85,7 +84,7 @@
     text-align: center;
   }
   .gala-image {
-    width: 80%;
+    /* width: 80%; */
   }
   .gala-gallery {
     grid-template-columns: 1fr 1fr;

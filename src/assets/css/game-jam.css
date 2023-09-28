@@ -1,5 +1,5 @@
 .game-jam-container {
-  width: 100vw;
+  width: 100%;
   display: flex;
   overflow: auto;
   min-height: 100vh;
@@ -33,7 +33,7 @@
   display: flex;
   padding: var(--dl-space-space-threeunits);
   margin-top: 30px;
-  max-height: 800px;
+  max-width: 1500px;
   min-height: 80vh;
   align-items: center;
   margin-bottom: 30px;
@@ -86,7 +86,7 @@
     text-align: center;
   }
   .game-jam-image {
-    width: 80%;
+    /* width: 80%; */
   }
   .game-jam-gallery {
     grid-template-columns: 1fr 1fr;

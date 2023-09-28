@@ -1,20 +1,22 @@
 import React from "react";
 
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import Header from "../components/header";
+import Header from "../components/common/header";
 import GalleryCard from "../components/gallery-card";
-import Footer from "../components/footer";
-import Navigator from "../components/navigator";
-import "./gala.css";
+import Footer from "../components/common/footer";
+import Navigator from "../components/common/navigator";
+import "../assets/css/gala.css";
 
 const Gala = (props) => {
   return (
     <div className="gala-container">
-      <Helmet>
-        <title>Gala - Conjure</title>
-        <meta property="og:title" content="Gala - Conjure" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Gala - Conjure</title>
+          <meta property="og:title" content="Gala - Conjure" />
+        </Helmet>
+      </HelmetProvider>
       <Header rootClassName="header-root-class-name1"></Header>
       <div className="gala-container1">
         <div className="home-features">
