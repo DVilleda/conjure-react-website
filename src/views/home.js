@@ -11,10 +11,10 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <HelmetProvider>
-      <Helmet>
-        <title>Conjure</title>
-        <meta property="og:title" content="Conjure" />
-      </Helmet>
+        <Helmet>
+          <title>Conjure</title>
+          <meta property="og:title" content="Conjure" />
+        </Helmet>
       </HelmetProvider>
       <Header rootClassName="header-root-class-name2"></Header>
       <div className="home-container1">
@@ -22,7 +22,8 @@ const Home = (props) => {
           <Navigator></Navigator>
         </div>
       </div>
-      <div className="home-container1" style={{justifyContent:"center"}}>
+      <div className="home-container1" style={{ justifyContent: "center" }}>
+        <h2 className="home-title">Partenaires</h2>
         <section className="grid-container-sponsors">
           <div className="item1">
             <img

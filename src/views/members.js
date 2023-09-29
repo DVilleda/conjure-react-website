@@ -3,9 +3,9 @@ import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Header from "../components/common/header";
-import GalleryCard from "../components/gallery-card";
 import Footer from "../components/common/footer";
 import "../assets/css/members.css";
+import MemberGallery from "../components/membres/member-gallery";
 
 const Members = (props) => {
   return (
@@ -17,14 +17,7 @@ const Members = (props) => {
         </Helmet>
       </HelmetProvider>
       <Header rootClassName="header-root-class-name3"></Header>
-      <div className="members-gallery">
-        <GalleryCard rootClassName="gallery-card-root-class-name6"></GalleryCard>
-        <GalleryCard rootClassName="gallery-card-root-class-name7"></GalleryCard>
-        <GalleryCard rootClassName="gallery-card-root-class-name8"></GalleryCard>
-        <GalleryCard rootClassName="gallery-card-root-class-name9"></GalleryCard>
-        <GalleryCard rootClassName="gallery-card-root-class-name10"></GalleryCard>
-        <GalleryCard rootClassName="gallery-card-root-class-name11"></GalleryCard>
-      </div>
+      <MemberGallery />
       <Footer rootClassName="footer-root-class-name3"></Footer>
     </div>
   );

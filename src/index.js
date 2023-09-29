@@ -16,12 +16,12 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-            <Route element={<NotFound/>} path="*" />
-            <Route element={<About/>} exact path="/about" />
-            <Route element={<GameJam/>} exact path="/game-jam" />
-            <Route element={<Gala/>} exact path="/gala" />
-            <Route element={<Home/>} exact path="/" />
-            <Route element={<Members/>} exact path="/members" />
+          <Route element={<NotFound />} path="*" />
+          <Route element={<About />} exact path="/about" />
+          <Route element={<GameJam />} exact path="/game-jam" />
+          <Route element={<Gala />} exact path="/gala" />
+          <Route element={<Home />} exact path="/" />
+          <Route element={<Members />} exact path="/membres" />
         </Routes>
       </BrowserRouter>
     </>
