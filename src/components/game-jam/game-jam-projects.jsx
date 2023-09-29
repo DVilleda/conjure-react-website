@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ProjectList from "./project-gallery";
 
 export default function GameJamProject(props) {
-  const [eventData, setEventData] = useState([]);
+  const [eventData, setEventData] = useState();
 
   async function openJsonData() {
     const data = await import("./project-mock");

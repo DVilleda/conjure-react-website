@@ -19,7 +19,7 @@ export default function ImageCard(props) {
       </Link>
       <div className="centered-text-image">
         <Link to={`/${props.view}`}>
-          <h3>{props.title}</h3>
+          <h3 className="card-title">{props.title}</h3>
         </Link>
       </div>
     </div>
