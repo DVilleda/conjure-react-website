@@ -139,3 +139,29 @@
     padding: 16px;
   }
 }
+
+.navigation-links-nav {
+  flex: 0 0 auto;
+  color: white;
+  display: flex;
+  font-size: larger;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation-links-text1 {
+  margin-left: var(--dl-space-space-twounits);
+}
+
+@media (max-width: 767px) {
+  .navigation-links-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navigation-links-text {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-text1 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}

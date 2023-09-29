@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import NavigationLinks from "../navigation-links";
 import "../../assets/css/header.css";
 
 const Header = (props) => {
@@ -19,13 +18,11 @@ const Header = (props) => {
         />
       </Link>
       <div className="header-nav">
-        <NavigationLinks
-          text="Évenement"
-          text1="Membre"
-          text2="Projet"
-          rootClassName="rootClassName17"
-          className=""
-        ></NavigationLinks>
+        <nav className={`navigation-links-nav`}>
+        <Link to={`/about`}><span className="navigation-links-text">About</span></Link>
+          <span className="navigation-links-text1">Membres</span>
+          <span className="navigation-links-text1">Projets</span>
+        </nav>
       </div>
       <div className="header-icon-group">
         <svg viewBox="0 0 950.8571428571428 1024" className="header-icon">
